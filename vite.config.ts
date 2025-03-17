@@ -25,9 +25,6 @@ export default defineConfig(({ mode }) => ({
   define: {
     "process.env": {}, // ✅ Fix issues with some libraries using process.env
   },
-  esbuild: {
-    jsxInject: `import React from 'react'`, // ✅ Auto-import React for JSX
-  },
   optimizeDeps: {
     include: ["react", "react-dom"], // ✅ Ensures dependencies are optimized
   },
